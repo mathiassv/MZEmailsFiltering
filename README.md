@@ -1,4 +1,7 @@
-# MZEmailsFiltering
+﻿# MZEmailsFiltering
+
+**Author:** Mathias Svensson  
+**GitHub:** https://github.com/mathiassv/MZEmailsFiltering
 
 A Python script to automatically filter and organize emails in Maildir format based on subject matching rules.
 
@@ -217,18 +220,18 @@ The script expects and maintains standard Maildir structure:
 
 ```
 Maildir/
-??? cur/           # Current (already read) messages
-??? new/           # New (unread) messages  
-??? tmp/           # Temporary files
-??? .Stuff/        # Custom folder
-?   ??? cur/
-?   ??? new/
-?   ??? tmp/
-??? .Work/         # Another custom folder
-?   ??? cur/
-?   ??? new/
-?   ??? tmp/
-??? ...
+├── cur/           # Current (already read) messages
+├── new/           # New (unread) messages  
+├── tmp/           # Temporary files
+├── .Stuff/        # Custom folder
+│   ├── cur/
+│   ├── new/
+│   └── tmp/
+├── .Work/         # Another custom folder
+│   ├── cur/
+│   ├── new/
+│   └── tmp/
+└── ...
 ```
 
 ## Logging
@@ -263,4 +266,8 @@ The script provides detailed logging:
 
 ## License
 
+Copyright (c) 2025 Mathias Svensson
+
 This script is provided as-is for use with Maildir-format email systems.
+
+For more information, visit: https://github.com/mathiassv/MZEmailsFiltering
