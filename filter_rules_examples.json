@@ -1,0 +1,84 @@
+{
+  "rules": [
+    {
+      "name": "EXAMPLE 1: Filter by subject containing text",
+      "field": "subject",
+      "pattern": "[WORK]",
+      "match_type": "contains",
+      "case_sensitive": false,
+      "target_folder": "Work"
+    },
+    {
+      "name": "EXAMPLE 2: Filter by sender email address",
+      "field": "from",
+      "pattern": "boss@company.com",
+      "match_type": "contains",
+      "case_sensitive": false,
+      "target_folder": "Boss"
+    },
+    {
+      "name": "EXAMPLE 3: Filter by recipient (to field)",
+      "field": "to",
+      "pattern": "team@company.com",
+      "match_type": "contains",
+      "case_sensitive": false,
+      "target_folder": "Team"
+    },
+    {
+      "name": "EXAMPLE 4: Filter all emails from a domain (regex)",
+      "field": "from",
+      "pattern": "@newsletter\\.com$",
+      "match_type": "regex",
+      "case_sensitive": false,
+      "target_folder": "Newsletters"
+    },
+    {
+      "name": "EXAMPLE 5: Filter by CC field",
+      "field": "cc",
+      "pattern": "archive@company.com",
+      "match_type": "contains",
+      "case_sensitive": false,
+      "target_folder": "Archive"
+    },
+    {
+      "name": "EXAMPLE 6: Filter by subject starting with text",
+      "field": "subject",
+      "pattern": "Project Update:",
+      "match_type": "starts_with",
+      "case_sensitive": false,
+      "target_folder": "Projects"
+    },
+    {
+      "name": "EXAMPLE 7: Multiple keywords in subject (regex)",
+      "field": "subject",
+      "pattern": "invoice|receipt|payment|bill",
+      "match_type": "regex",
+      "case_sensitive": false,
+      "target_folder": "Finance"
+    },
+    {
+      "name": "EXAMPLE 8: Filter by reply-to header",
+      "field": "reply-to",
+      "pattern": "support@",
+      "match_type": "starts_with",
+      "case_sensitive": false,
+      "target_folder": "Support"
+    },
+    {
+      "name": "EXAMPLE 9: Exact subject match (case insensitive)",
+      "field": "subject",
+      "pattern": "daily report",
+      "match_type": "exact",
+      "case_sensitive": false,
+      "target_folder": "Reports"
+    },
+    {
+      "name": "EXAMPLE 10: Filter emails ending with certain text",
+      "field": "subject",
+      "pattern": "- Action Required",
+      "match_type": "ends_with",
+      "case_sensitive": false,
+      "target_folder": "ActionRequired"
+    }
+  ]
+}
